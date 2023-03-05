@@ -1,13 +1,13 @@
-package jpabook.spingjpa1;
+package jpabook.springjpa1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpingJpa1Application {
+public class SpringJpa1Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpingJpa1Application.class, args);
+        SpringApplication.run(SpringJpa1Application.class, args);
     }
 
 }

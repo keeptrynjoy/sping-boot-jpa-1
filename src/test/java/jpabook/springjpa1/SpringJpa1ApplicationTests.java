@@ -1,10 +1,10 @@
-package jpabook.spingjpa1;
+package jpabook.springjpa1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpingJpa1ApplicationTests {
+class SpringJpa1ApplicationTests {
 
     @Test
     void contextLoads() {
