@@ -1,4 +1,4 @@
-package jpabook.springjpa1;
+package jpabook.springjpa1.domain;
 
 import org.springframework.stereotype.Repository;
 

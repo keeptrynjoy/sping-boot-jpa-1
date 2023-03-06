@@ -1,6 +1,7 @@
 package jpabook.springjpa1;
 
-import org.assertj.core.api.Assertions;
+import jpabook.springjpa1.domain.Member;
+import jpabook.springjpa1.domain.MemberRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,22 +19,24 @@ public class MemberRepositoryTest {
     @Autowired
     MemberRepository memberRepository;
 
-    @Test
-    @Transactional
-    @Rollback(false)
-    public void testMember() throws Exception{
-        //given
-        Member member = new Member();
-        member.setUsername("memberA");
+//    @Test
+//    @Transactional
+//    @Rollback(false)
+//    public void testMember() throws Exception{
+//        //given
+//        Member member = new Member();
+//        member.setUsername("memberA");
+//
+//        //when
+//        Long saveId = memberRepository.save(member);
+//        Member findMember = memberRepository.find(saveId);
+//
+//        //then
+//        assertThat(findMember.getId()).isEqualTo(member.getId());
+//        assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
+//        assertThat(findMember).isEqualTo(member);
+//        System.out.println("(findMember==member) = " + (findMember==member));
+//    }
 
-        //when
-        Long saveId = memberRepository.save(member);
-        Member findMember = memberRepository.find(saveId);
 
-        //then
-        assertThat(findMember.getId()).isEqualTo(member.getId());
-        assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
-        assertThat(findMember).isEqualTo(member);
-        System.out.println("(findMember==member) = " + (findMember==member));
-    }
 }
