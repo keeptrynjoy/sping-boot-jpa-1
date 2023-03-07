@@ -35,3 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### WEB Resources ###
+!**/src/main/resources/static/css/
+!**/src/main/resources/static/js/
